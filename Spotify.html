@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="icon" href="./assets/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Spotify.css">
+</head>
+<body>
+    <!-- main container -->
+    <div id="main_container">
+        <!-- upper body -->
+        <div id="upper_body" class="">
+            <!-- sidebar -->
+            <div id="sidebar">
+                <!-- upper sidebar for navigation -->
+                <div id="side1" class="container">
+                    <!-- home button -->
+                    <div id="home">
+                        <img src="./assets/home.png" class="svg" alt="">
+                        <a href="#">Home</a>
+                    </div>
+                    <!-- search button -->
+                    <div id="search" class="hover" style="margin-bottom: 0; margin-top: 1rem;">
+                        <img src="./assets/search.png" class="svg" alt="">
+                        <a href="#">Search</a>
+                    </div>
+                </div>
+                <!-- lower sidebar for artists -->
+                <div id="side2" class="container">
+                    <!-- your library navbar -->
+                    <div id="lib_nav" class="navbar">
+                        <!-- your library -->
+                        <div id="upper_nav">
+                            <!-- your library text -->
+                            <div class="hover" >
+                                <img src="./assets/playlist.png" class="svg" alt="">
+                                <a href="#">Your library</a>
+                            </div>
+                            <!-- buttons -->
+                            <div id="lib_nav_btn">
+                                <button id="plus_btn" class="circle_btn hover"><img src="./assets/plus.png" class="svg" alt=""></button>
+                                <button id="arrow_btn" class="circle_btn hover"><img src="./assets/arrow.png" class="svg" alt=""></button>
+                            </div>
+                        </div>
+                        <!-- buttons -->
+                        <div id="lower_nav">
+                            <button class="fade_btn">Playlists</button>
+                            <button class="fade_btn">Artists</button>
+                        </div>
+                    </div>
+                    <!-- artists -->
+                    <div id="artists">
+                        <!-- navbar -->
+                        <div id="side2_artists_navbar" class="navbar">
+                            <button class="circle_btn hover"><img src="./assets/search.png" class="svg" alt=""></button>
+                            <div class="hover">Recents</div>
+                        </div>
+                        <!-- artist card -->
+                        <!-- 1 -->
+                        <div class="artist_card">
+                            <div><img src="./assets/liked-songs-640.png" style="border-radius: 0.5rem;" class="artist_image" alt=""></div>
+                            <div class="artist_label"><h3>Liked Songs</h3><p><i class="fa-sharp fa-solid fa-thumbtack" style="color: rgb(var(--green)); transform: rotate(45deg);"></i> &nbsp;Playlist &middot; 3 Songs</p></div>
+                        </div>
+                        <!-- 2 -->
+                        <div class="artist_card">
+                            <div><img src="./assets/emiway.webp" class="artist_image" alt=""></div>
+                            <div class="artist_label"><h3>Emiway Bantai</h3><p>Artist</p></div>
+                        </div>
+                        <!-- 3 -->
+                        <div class="artist_card">
+                            <div><img src="./assets/raftaar.jpg" class="artist_image" alt=""></div>
+                            <div class="artist_label"><h3>Raftaar</h3><p>Artist</p></div>
+                        </div>
+                        <!-- 4 -->
+                        <div class="artist_card">
+                            <div><img src="./assets/eminem.jpeg" class="artist_image" alt=""></div>
+                            <div class="artist_label"><h3>Eminem</h3><p>Artist</p></div>
+                        </div>
+                        <!-- 5 -->
+                        <div class="artist_card">
+                            <div><img src="./assets/alan.jpeg" class="artist_image" alt=""></div>
+                            <div class="artist_label"><h3>Alan Walker</h3><p>Artist</p></div>
+                        </div>
+                        <!-- 6 -->
+                        <div class="artist_card">
+                            <div><img src="./assets/shary.jpeg" class="artist_image" alt=""></div>
+                            <div class="artist_label"><h3>Sharry Mann</h3><p>Artist</p></div>
+                        </div>
+                        <!-- 7 -->
+                        <div class="artist_card">
+                            <div><img src="./assets/hardy.jpeg" class="artist_image" alt=""></div>
+                            <div class="artist_label"><h3>Hardy Sandhu</h3><p>Artist</p></div>
+                        </div>
+                        <!-- 8 -->
+                        <div class="artist_card">
+                            <div><img src="./assets/sidhu.jpeg" class="artist_image" alt=""></div>
+                            <div class="artist_label"><h3>Sidhu Moosewala</h3><p>Artist</p></div>
+                        </div>
+                        <!-- 9 -->
+                        <div class="artist_card">
+                            <div><img src="./assets/guru.jpeg" class="artist_image" alt=""></div>
+                            <div class="artist_label"><h3>Guru Randhawa</h3><p>Artist</p></div>
+                        </div>
+                        <!-- 10 -->
+                        <div class="artist_card">
+                            <div><img src="./assets/gippy.jpeg" class="artist_image" alt=""></div>
+                            <div class="artist_label"><h3>Gippy Grewal</h3><p>Artist</p></div>
+                        </div>
+                        <!-- 11 -->
+                        <div class="artist_card">
+                            <div><img src="./assets/gary.jpeg" class="artist_image" alt=""></div>
+                            <div class="artist_label"><h3>Gary Sandhu</h3><p>Artist</p></div>
+                        </div>
+                        <!-- 12 -->
+                        <div class="artist_card">
+                            <div><img src="./assets/diljit.jpeg" class="artist_image" alt=""></div>
+                            <div class="artist_label"><h3>Diljit Dosanjh</h3><p>Artist</p></div>
+                        </div>
+                        <!-- 13 -->
+                        <div class="artist_card">
+                            <div><img src="./assets/armaan.jpeg" class="artist_image" alt=""></div>
+                            <div class="artist_label"><h3>Armaan Malik</h3><p>Artist</p></div>
+                        </div>
+                        <!-- 14 -->
+                        <div class="artist_card">
+                            <div><img src="./assets/justin.jpeg" class="artist_image" alt=""></div>
+                            <div class="artist_label"><h3>Justin Bieber</h3><p>Artist</p></div>
+                        </div>
+                        <!-- 15 -->
+                        <div class="artist_card">
+                            <div><img src="./assets/mika.jpeg" class="artist_image" alt=""></div>
+                            <div class="artist_label"><h3>Mika Singh</h3><p>Artist</p></div>
+                        </div>
+                        <!-- 16 -->
+                        <div class="artist_card">
+                            <div><img src="./assets/badshah.jpeg" class="artist_image" alt=""></div>
+                            <div class="artist_label"><h3>Badshah</h3><p>Artist</p></div>
+                        </div>
+                        <!-- 17 -->
+                        <div class="artist_card">
+                            <div><img src="./assets/arijit.jpeg" class="artist_image" alt=""></div>
+                            <div class="artist_label"><h3>Arijit Singh</h3><p>Artist</p></div>
+                        </div>
+                        <!-- 18 -->
+                        <div class="artist_card">
+                            <div><img src="./assets/neha.jpeg" class="artist_image" alt=""></div>
+                            <div class="artist_label"><h3>Neha Kakkar</h3><p>Artist</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- content -->
+            <div id="main_content" class="container">
+                <div>
+                    <!-- navbar -->
+                <div id="main_content_navbar" class="navbar">
+                    <!-- navigation buttons -->
+                    <div id="navigation">
+                        <button class="circle_btn hover" style="padding: 0.2rem 0.2rem 0 0;"><img src="./assets/back_navigation.png" alt=""></button>
+                        <button class="circle_btn hover" style="padding: 0.2rem 0 0 0.2rem;"><img src="./assets/forward_navigation.png" alt=""></button>
+                    </div>
+                    <!-- explore and install buttons -->
+                    <div id="main_nav_buttons">
+                        <button class="fade_btn" style="background-color: rgb(var(--white)); color: rgb(var(--black)); margin-left: 0;">Explore Premium</button>
+                        <button class="fade_btn" style="display: inline-flex; align-items: center;"><img src="./assets/download.png" style="height: 1rem; width: 1rem;" alt="">&nbsp;Install Apps</button>
+                        <button class="circle_btn hover" style="background-color: rgb(var(--black));"><img src="./assets/profile.png" style="height: 1rem;"></button>
+                    </div>
+                </div>
+                <div id="main">
+                    <!-- 1 card row -->
+                    <section class="card_area">
+                        <div class="section_label">Recently Played</div>
+                        <div class="grid">
+                            <div class="card">
+                                <div class="card_box">
+                                    <div class="card_box" style="height: auto;">
+                                        <img class="play" src="./assets/play.png">             
+                                        <img src="./assets/alb1.jpg" alt="">
+                                    </div>
+                                    
+                                    <h3>Punjabi 101</h3>
+                                    <p>Ultimate 101 Punjabi Hits with Harrdy Sandhu...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- 2 -->
+                    <section class="card_area">
+                        <div class="section_label">Made For You</div>
+                        <div class="grid">
+                            <div class="card">
+                                <div class="card_box">
+                                    <div class="card_box" style="height: auto;">
+                                        <img class="play" src="./assets/play.png">
+                                        <img src="./assets/dailymix1.jpg" alt="">
+                                    </div>
+                                    
+                                    <h3>Album Name</h3>
+                                    <p>Ultimate 100 song Hits of Bollywood</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card_box">
+                                    <div class="card_box" style="height: auto;">
+                                        <img class="play" src="./assets/play.png">
+                                        <img src="./assets/dailymix2.jpg" alt="">
+                                    </div>
+                                    
+                                    <h3>Album Name</h3>
+                                    <p>Ultimate 100 song Hits of Bollywood</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card_box">
+                                    <div class="card_box" style="height: auto;">
+                                        <img class="play" src="./assets/play.png">
+                                        <img src="./assets/dailymixemiway.jpg" alt="">
+                                    </div>
+                                    
+                                    <h3>Album Name</h3>
+                                    <p>Ultimate 100 song Hits of Bollywood</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card_box">
+                                    <div class="card_box" style="height: auto;">
+                                        <img class="play" src="./assets/play.png">
+                                        <img src="./assets/mix1.jpeg" alt="">
+                                    </div>
+                                    
+                                    <h3>Album Name</h3>
+                                    <p>Ultimate 100 song Hits of Bollywood</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card_box">
+                                    <div class="card_box" style="height: auto;">
+                                        <img class="play" src="./assets/play.png">
+                                        <img src="./assets/mix2.jpeg" alt="">
+                                    </div>
+                                    
+                                    <h3>Album Name</h3>
+                                    <p>Ultimate 100 song Hits of Bollywood</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card_box">
+                                    <div class="card_box" style="height: auto;">
+                                        <img class="play" src="./assets/play.png">
+                                        <img src="./assets/mix3.jpeg" alt="">
+                                    </div>
+                                    
+                                    <h3>Album Name</h3>
+                                    <p>Ultimate 100 song Hits of Bollywood</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- 3 -->
+                    <section class="card_area">
+                        <div class="section_label">Artists</div>
+                        <div class="grid">
+                            <div class="card">
+                                <div class="card_box">
+                                    <div class="card_box" style="height: auto;">
+                                        <img class="play" src="./assets/play.png">
+                                        <img src="./assets/gary.jpeg" alt="">
+                                    </div>
+                                    
+                                    <h3>Album Name</h3>
+                                    <p>Ultimate 100 song Hits of Bollywood</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card_box">
+                                    <div class="card_box" style="height: auto;">
+                                        <img class="play" src="./assets/play.png">
+                                        <img src="./assets/justin.jpeg" alt="">
+                                    </div>
+                                    
+                                    <h3>Punjabi 101</h3>
+                                    <p>Ultimate 101 Punjabi Hits with Harrdy Sandhu...</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card_box">
+                                    <div class="card_box" style="height: auto;">
+                                        <img class="play" src="./assets/play.png">
+                                        <img src="./assets/diljit.jpeg" alt="">
+                                    </div>
+                                    
+                                    <h3>Punjabi 101</h3>
+                                    <p>Ultimate 101 Punjabi Hits with Harrdy Sandhu...</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card_box">
+                                    <div class="card_box" style="height: auto;">
+                                        <img class="play" src="./assets/play.png">
+                                        <img src="./assets/sidhu.jpeg" alt="">
+                                    </div>
+                                    
+                                    <h3>Album Name</h3>
+                                    <p>Ultimate 100 song Hits of Bollywood</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card_box">
+                                    <div class="card_box" style="height: auto;">
+                                        <img class="play" src="./assets/play.png">
+                                        <img src="./assets/alan.jpeg" alt="">    
+                                    </div>
+                        
+                                    <h3>Punjabi 101</h3>
+                                    <p>Ultimate 101 Punjabi Hits with Harrdy Sandhu...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- 4 -->
+                    <section class="card_area">
+                        <div class="section_label">Popular Radio</div>
+                        <div class="grid">
+                            <div class="card">
+                                <div class="card_box">
+                                    <div class="card_box" style="height: auto;">
+                                        <img class="play" src="./assets/play.png">
+                                        <img src="./assets/rad1.jpg" alt="">    
+                                    </div>
+                                    
+                                    <h3>Album Name</h3>
+                                    <p>Ultimate 100 song Hits of Bollywood</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card_box">
+                                    <div class="card_box" style="height: auto;">
+                                        <img class="play" src="./assets/play.png">
+                                        <img src="./assets/rad2.jpg" alt="">    
+                                    </div>
+                                    
+                                    <h3>Album Name</h3>
+                                    <p>Ultimate 100 song Hits of Bollywood</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card_box">
+                                    <div class="card_box" style="height: auto;">
+                                        <img class="play" src="./assets/play.png">
+                                        <img src="./assets/rad3.jpg" alt="">    
+                                    </div>
+                                    
+                                    <h3>Album Name</h3>
+                                    <p>Ultimate 100 song Hits of Bollywood</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card_box">
+                                    <div class="card_box" style="height: auto;">
+                                        <img class="play" src="./assets/play.png">
+                                        <img src="./assets/rad4.jpg" alt="">    
+                                    </div>
+                                    
+                                    <h3>Album Name</h3>
+                                    <p>Ultimate 100 song Hits of Bollywood</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+                </div>
+        <!-- lower body -->
+        <div id="lower_body" class="">
+            <div id="lower_body_div1" style="margin-right: 10rem;">
+                <div style="margin-right: 1rem;"><img src="./assets/Still-Rollin-Punjabi-2023-20230512121542-500x500.jpg" id="song_cover" style="height: 3.6rem; border-radius: 0.5rem;" alt=""></div>
+                <div id="song_label" style="flex-direction: column;">
+                    <h3>Cheques</h3>
+                    <p>Shubh</p>
+                </div>
+                <div id="song_btn" style="align-items: center; margin-left: 2rem;">
+                    <img class="hover" style="height: 1.5rem; margin-right: 0.5rem;" src="./assets/heart.png" alt="">
+                    <img class="hover" style="height: 1rem;" src="./assets/album_icon2.png" alt="">
+                </div>
+            </div>
+            <div id="lower_body_div2">
+                <div style="margin-bottom: 0.2rem;">
+                    <img class="musicbar_options hover" src="./assets/shuffle.png" alt="">
+                    <img class="musicbar_options hover" src="./assets/previous_musicbar.png" alt="">
+                    <div style=" display: flex; justify-content: center; align-items: center;">
+                        <input type="checkbox" id="checkbox" style="display: none;" checked>
+                        <label id="play" for="checkbox"><img class="play_pause" src="./assets/play_musicbar.png" alt=""></label>
+                        <label id="pause" for="checkbox"><img class="play_pause" src="./assets/pause_musicbar.png" alt=""></label>
+                    </div>
+                    <img class="musicbar_options right hover" style="margin-left: 2rem; margin-right: 0;" src="./assets/next_musicbar.png" alt="">
+                    <img class="musicbar_options right hover" style="margin-left: 2rem; margin-right: 0;" src="./assets/player_icon5.png" alt="">
+                </div>
+                <div id="timeline_holder" style="flex: 1; display: flex; width: 100%; height: 100%; align-items: center;">
+                    <label for="timeline" class="hover" style="margin-right: 1rem; font-weight: 100;"><h3 style="margin: 0; font-weight: 300;">1:33</h3></label>
+                    <input type="range" value="50" min="0" max="100" class="range_slider" id="timeline">
+                    <label for="timeline" class="hover" style="margin-left: 1rem;"><h3 style="margin: 0; font-weight: 300;">3:03</h3></label>
+                </div>
+            </div>
+            <div id="lower_body_div3" style="margin-left: 10rem;">
+                <img class="hover" src="./assets/controls_icon1.png" alt="">
+                <img class="hover" src="./assets/controls_icon2.png" alt="">
+                <img class="hover" src="./assets/queue.png" alt="">
+                <img class="hover" src="./assets/device.png" alt="">
+                <img class="hover" style="margin-right: 0.5rem;" src="./assets/controls_icon5.png" alt="">
+                <input type="range" min="0" max="100" value="100" style="width: 5rem;" id="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
